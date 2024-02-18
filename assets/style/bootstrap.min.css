@@ -7130,8 +7130,8 @@ fieldset:disabled .btn {
 .min-vw-100 {
   min-width: 100vw !important;
 }
-.h-15 {
-  height: 15% !important;
+.h-18 {
+  height: 18% !important;
 }
 .h-25 {
   height: 25% !important;
@@ -7927,9 +7927,9 @@ fieldset:disabled .btn {
   border-bottom-left-radius: var(--bs-border-radius) !important;
   border-top-left-radius: var(--bs-border-radius) !important;
 }
+
 .rounded-navbar {
-  border-bottom-right-radius: 100%;
-  border-bottom-left-radius: 100%;
+  border-radius: 0% 0% 50% 50% / 0% 0% 60% 60%;
 }
 .visible {
   visibility: visible !important;
