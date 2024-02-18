@@ -7829,9 +7829,9 @@ fieldset:disabled .btn {
   background-color: var(--bs-red) !important;
 }
 
-.bg-heading {
+.text-heading {
   --bs-bg-opacity: 1;
-  background-color: var(--bs-heading) !important;
+  color: var(--bs-heading) !important;
 }
 
 .bg-body {
