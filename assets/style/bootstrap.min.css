@@ -4,6 +4,8 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -92,13 +94,13 @@
 }
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial;
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background-color: var(--bs-primary);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }
@@ -7130,8 +7132,8 @@ fieldset:disabled .btn {
 .min-vw-100 {
   min-width: 100vw !important;
 }
-.h-18 {
-  height: 18% !important;
+.h-20 {
+  height: 20% !important;
 }
 .h-25 {
   height: 25% !important;
@@ -10464,3 +10466,17 @@ fieldset:disabled .btn {
   }
 }
 /*# sourceMappingURL=bootstrap.min.css.map */
+
+.background-navbar {
+  background-image: url('../image/patter-navbar.png') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.background-navbar::before {
+  background-color: var(--bs-red);
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
