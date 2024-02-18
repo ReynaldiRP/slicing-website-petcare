@@ -11,14 +11,17 @@
     />
   </head>
   <body>
+    <!-- Navbar -->
     <header
-      class="h-auto bg-red py-5 rounded-navbar d-flex flex-column align-items-center gap-5"
+      class="h-auto bg-red py-5 rounded-navbar d-flex flex-column align-items-center gap-5 position-relative"
     >
       <img
         src="../assets/image/pattern-navbar.png"
         alt="background gambar"
-        class="position-absolute z-0 w-75 "
+        class="position-absolute z-0 bottom-25 w-100"
+        style="object-fit: cover; opacity: 0.6"
       />
+
       <nav class="navbar navbar-expand-lg bg-primary rounded-3 px-3 py-0">
         <!-- Logo -->
         <a class="navbar-brand d-lg-none" href="#">
@@ -47,7 +50,9 @@
           class="collapse navbar-collapse justify-content-end"
           id="navbarNav"
         >
-          <ul class="navbar-nav text-black fw-bolder d-flex align-items-center">
+          <ul
+            class="navbar-nav text-black fw-bolder d-flex align-items-center gap-2"
+          >
             <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
             <li class="nav-item">
               <a class="nav-link" href="#">Brand Story</a>
@@ -58,7 +63,7 @@
             </li>
             <li class="nav-item">
               <!-- Display only on small screens -->
-              <a class="navbar-brand d-none d-sm-block d-md-block" href="#">
+              <a class="navbar-brand d-none d-lg-block" href="#">
                 <img
                   src="../assets/image/logo-kf 1.png"
                   class="rounded-circle img-fluid"
@@ -75,7 +80,11 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Contact Us</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item d-flex ms-2 gap-1 align-items-center dropdown">
+              <i
+                class="fa-solid fa-magnifying-glass d-none d-lg-block"
+                style="color: #000000"
+              ></i>
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -103,8 +112,9 @@
       </section>
     </header>
 
-    <main class="vh-100">
-      <section class="h-auto bg-primary">test</section>
+    <!-- Content -->
+    <main class="vh-100" style="background-image: url()">
+      <section class="h-auto bg-primary"></section>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

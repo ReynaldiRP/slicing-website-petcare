@@ -6963,6 +6963,10 @@ fieldset:disabled .btn {
 .bottom-0 {
   bottom: 0 !important;
 }
+.bottom-25 {
+  bottom: 43% !important;
+}
+
 .bottom-50 {
   bottom: 50% !important;
 }
