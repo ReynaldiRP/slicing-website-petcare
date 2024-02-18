@@ -9,6 +9,15 @@
 body {
     font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial;
 }
+.bg-red{
+    background-color: var(--c-red);
+}
+.text-header{
+   color: var(--c-header);
+}
+.c-primary{
+   background-color: var(--c-primary);
+}
 
 .rounded-navbar {
     border-radius: 0% 0% 50% 50% / 0% 0% 60% 60%;
