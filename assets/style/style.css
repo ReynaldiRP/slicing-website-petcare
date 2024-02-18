@@ -1,32 +1,31 @@
 @import url('https://fonts.cdnfonts.com/css/poppins');
 
 :root {
-    --c-primary: #f9f4d7;
-    --c-red: #d22828;
-    --c-header: #F8DF8D;
+  --c-primary: #f9f4d7;
+  --c-red: #d22828;
+  --c-header: #f8df8d;
 }
 
 body {
-    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial;
+  background-color: var(--c-primary) !important;
+  font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial;
 }
-.bg-red{
-    background-color: var(--c-red);
+.bg-red {
+  background-color: var(--c-red) !important;
 }
-.text-header{
-   color: var(--c-header);
+.text-header {
+  color: var(--c-header);
 }
-.c-primary{
-   background-color: var(--c-primary);
+.c-primary {
+  background-color: var(--c-primary);
 }
 
 .rounded-navbar {
-    border-radius: 0% 0% 50% 50% / 0% 0% 60% 60%;
-  }
-
-.background-pattern {
-    background-image: url(../assets/image/background-content.png);
-    background-repeat: repeat;
-    opacity: 0.6;
+  border-radius: 0% 0% 50% 50% / 0% 0% 60% 60%;
 }
 
-
+.background-pattern {
+  background-image: url(../assets/image/background-content.png);
+  background-repeat: repeat;
+  opacity: 0.6;
+}
