@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="../assets/style/style.css" />
+    <link rel="stylesheet" href="../assets/style/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <style>
+      body {
+        background-image: url(../assets/image/background-content.png);
+        background-repeat: repeat round;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header
+      class="bg-red h-auto py-5 rounded-navbar d-flex flex-column align-items-center gap-5 position-relative"
+    >
+      <!-- Background Header -->
+      <img
+        src="../assets/image/pattern-navbar.png"
+        alt="background gambar"
+        class="position-absolute z-0 bottom-25 w-100 object-fit-cover"
+        style="opacity: 0.6"
+      />
+
+      <nav class="navbar navbar-expand-lg c-primary rounded-3 px-3 py-0">
+        <!-- Logo -->
+        <a class="navbar-brand d-lg-none" href="#">
+          <img
+            src="../assets/image/logo-kf 1.png"
+            class="rounded-circle img-fluid"
+            alt="gambar logo"
+          />
+        </a>
+
+        <!-- Hamburger Menu Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Items -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul
+            class="navbar-nav text-black fw-bolder d-flex align-items-center gap-2"
+          >
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Brand Story</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Testimony</a>
+            </li>
+            <li class="nav-item">
+              <!-- Display only on small screens -->
+              <a class="navbar-brand d-none d-lg-block" href="#">
+                <img
+                  src="../assets/image/logo-kf 1.png"
+                  class="rounded-circle img-fluid"
+                  alt="gambar logo"
+                />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">How To Buy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pet Care</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item d-flex ms-2 gap-1 align-items-center dropdown">
+              <i
+                class="fa-solid fa-magnifying-glass d-none d-lg-block"
+                style="color: #000000"
+              ></i>
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="languageDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                EN
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">ID</a></li>
+                <li><a class="dropdown-item" href="#">EU</a></li>
+                <li><a class="dropdown-item" href="#">CN</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section
+        class="container d-flex flex-column align-items-center m-0 text-header"
+      >
+        <h1 class="text-uppercase fs-1" style="font-weight: 900">Testimony</h1>
+        <p class="text-center opacity-50">
+          We love to share their story, how about you?
+        </p>
+      </section>
+    </header>
+
+    <!-- Content -->
+    <main class="vh-100 py-5">
+      <!-- Testimoni Content -->
+      <div class="container">
+        <div class="d-flex justify-content-end">
+          <a
+            class="nav-link dropdown-toggle c-red"
+            href="#"
+            id="sortDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            sort by : Most recent
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Most recent</a></li>
+            <li><a class="dropdown-item" href="#">Most popular</a></li>
+          </ul>
+        </div>
+
+        <!-- First Testimoni -->
+        <hr />
+        <div class="content-section row p-3 m-0">
+          <div class="col-12 col-md-3">
+            <img
+              src="../assets/image/dog-two.jpg"
+              alt="gambar user"
+              class="image-testimoni rounded-circle"
+            />
+          </div>
+          <div class="col col-md">
+            <div class="row">
+              <div class="col-12">
+                <i
+                  class="fa-solid fa-quote-left fa-2xl"
+                  style="color: #000000"
+                ></i>
+              </div>
+              <div class="col-12 mt-2">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                  cumque quaerat rem nostrum vel? Praesentium nobis alias error
+                  corporis cum adipisci fuga repellat, sequi molestias quae
+                  possimus accusamus aperiam! Molestiae?
+                </p>
+              </div>
+              <div class="col mt-3">
+                <p class="fw-bold text-black">Samantha R.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Testimony -->
+        <hr />
+        <div class="content-section row p-3 m-0">
+          <div class="col-12 col-md-3">
+            <img
+              src="../assets/image/dog-two.jpg"
+              alt="gambar user"
+              class="image-testimoni rounded-circle"
+            />
+          </div>
+          <div class="col col-md">
+            <div class="row">
+              <div class="col-12">
+                <i
+                  class="fa-solid fa-quote-left fa-2xl"
+                  style="color: #000000"
+                ></i>
+              </div>
+              <div class="col-12 mt-2">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                  cumque quaerat rem nostrum vel? Praesentium nobis alias error
+                  corporis cum adipisci fuga repellat, sequi molestias quae
+                  possimus accusamus aperiam! Molestiae?
+                </p>
+              </div>
+              <div class="col mt-3">
+                <p class="fw-bold text-black">Samantha R.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Testimony -->
+        <hr />
+        <div class="content-section row p-3 m-0">
+          <div class="col-12 col-md-3">
+            <img
+              src="../assets/image/dog-two.jpg"
+              alt="gambar user"
+              class="image-testimoni rounded-circle"
+            />
+          </div>
+          <div class="col col-md">
+            <div class="row">
+              <div class="col-12">
+                <i
+                  class="fa-solid fa-quote-left fa-2xl"
+                  style="color: #000000"
+                ></i>
+              </div>
+              <div class="col-12 mt-2">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                  cumque quaerat rem nostrum vel? Praesentium nobis alias error
+                  corporis cum adipisci fuga repellat, sequi molestias quae
+                  possimus accusamus aperiam! Molestiae?
+                </p>
+              </div>
+              <div class="col mt-3">
+                <p class="fw-bold text-black">Samantha R.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fourth Testimony -->
+        <hr />
+        <div class="content-section row p-3 m-0">
+          <div class="col-12 col-md-3">
+            <img
+              src="../assets/image/dog-two.jpg"
+              alt="gambar user"
+              class="image-testimoni rounded-circle"
+            />
+          </div>
+          <div class="col col-md">
+            <div class="row">
+              <div class="col-12">
+                <i
+                  class="fa-solid fa-quote-left fa-2xl"
+                  style="color: #000000"
+                ></i>
+              </div>
+              <div class="col-12 mt-2">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                  cumque quaerat rem nostrum vel? Praesentium nobis alias error
+                  corporis cum adipisci fuga repellat, sequi molestias quae
+                  possimus accusamus aperiam! Molestiae?
+                </p>
+              </div>
+              <div class="col mt-3">
+                <p class="fw-bold text-black">Samantha R.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fifth Testimony -->
+        <hr />
+        <div class="content-section row p-3 m-0">
+          <div class="col-12 col-md-3">
+            <img
+              src="../assets/image/dog-two.jpg"
+              alt="gambar user"
+              class="image-testimoni rounded-circle"
+            />
+          </div>
+          <div class="col col-md">
+            <div class="row">
+              <div class="col-12">
+                <i
+                  class="fa-solid fa-quote-left fa-2xl"
+                  style="color: #000000"
+                ></i>
+              </div>
+              <div class="col-12 mt-2">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                  cumque quaerat rem nostrum vel? Praesentium nobis alias error
+                  corporis cum adipisci fuga repellat, sequi molestias quae
+                  possimus accusamus aperiam! Molestiae?
+                </p>
+              </div>
+              <div class="col mt-3">
+                <p class="fw-bold text-black">Samantha R.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="container mt-4 d-flex justify-content-center">
+        <nav aria-label="...">
+          <ul class="custom-pagination">
+            <li class="custom-page-item mx-4">
+              <a class="custom-page-link" href="#" aria-label="Previous">
+                <i class="fa-solid fa-chevron-left" id="previous-page"></i>
+              </a>
+            </li>
+            <li class="custom-page-item active" aria-current="page">
+              <span class="custom-page-link">1</span>
+            </li>
+            <li class="page-item disabled">
+              <a class="page-link" href="#">of</a>
+            </li>
+            <li class="custom-page-item">
+              <a class="custom-page-link" href="#">5</a>
+            </li>
+            <li class="custom-page-item mx-4">
+              <a class="custom-page-link" href="#" aria-label="Next">
+                <i class="fa-solid fa-chevron-right" id="next-page"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="../assets/script/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+  </body>
+</html>
