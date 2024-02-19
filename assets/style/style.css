@@ -1,10 +1,9 @@
 /* @import url('https://fonts.cdnfonts.com/css/poppins'); */
 
-@font-face
-  {
-    font-family: 'Avenir';
-    src: url('assets/fonts/TradeGothicLT/TradeGothicLT.ttf');
-  }
+@font-face {
+  font-family: 'Avenir';
+  src: url('assets/fonts/TradeGothicLT/TradeGothicLT.ttf');
+}
 
 :root {
   --c-primary: #f9f4d7;
@@ -14,7 +13,7 @@
 
 body {
   background-color: var(--c-primary) !important;
-  font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial;
+  font-family: 'Avenir' !important;
 }
 .bg-red {
   background-color: var(--c-red) !important;
@@ -31,24 +30,24 @@ body {
   background-color: var(--c-primary);
 }
 .form-switch .form-check-input {
-  width: 21em; 
-  height: 4.7em; 
+  width: 21em;
+  height: 4.7em;
 }
 
 .form-switch .form-check-label {
-  margin-left: 0.5em; 
+  margin-left: 0.5em;
 }
 
 .c-red {
   color: var(--c-red) !important;
 }
 
-.w-65{
-    width: 65% !important;
+.w-65 {
+  width: 65% !important;
 }
 
-.bottom-70{
-    bottom: 70% !important;
+.bottom-70 {
+  bottom: 70% !important;
 }
 
 .rounded-navbar {
@@ -59,13 +58,10 @@ body {
   border-radius: 40% 40% 0% 0% / 25% 25% 0% 0%;
 }
 
-.border-input{
-    --bs-border-opacity: 1;
-    border-width: 3px;
-    border-color: rgba(
-        var(--c-red),
-        var(--bs-border-opacity)
-    ) !important;
+.border-input {
+  --bs-border-opacity: 1;
+  border-width: 3px;
+  border-color: rgba(var(--c-red), var(--bs-border-opacity)) !important;
 }
 
 .image-testimoni {
@@ -96,7 +92,7 @@ nav.navbar {
 
 @media (min-width: 375px) {
   nav.navbar {
-    width: 80% !important;
+    width: 75% !important;
     padding-inline: 1rem !important;
   }
 }
