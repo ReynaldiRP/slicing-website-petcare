@@ -1,4 +1,10 @@
-@import url('https://fonts.cdnfonts.com/css/poppins');
+/* @import url('https://fonts.cdnfonts.com/css/poppins'); */
+
+@font-face
+  {
+    font-family: 'Avenir';
+    src: url('assets/fonts/TradeGothicLT/TradeGothicLT.ttf');
+  }
 
 :root {
   --c-primary: #f9f4d7;
@@ -24,9 +30,25 @@ body {
 .c-primary {
   background-color: var(--c-primary);
 }
+.form-switch .form-check-input {
+  width: 21em; 
+  height: 4.7em; 
+}
+
+.form-switch .form-check-label {
+  margin-left: 0.5em; 
+}
 
 .c-red {
   color: var(--c-red) !important;
+}
+
+.w-65{
+    width: 65% !important;
+}
+
+.bottom-70{
+    bottom: 70% !important;
 }
 
 .rounded-navbar {
@@ -35,6 +57,15 @@ body {
 
 .rounded-footer {
   border-radius: 40% 40% 0% 0% / 25% 25% 0% 0%;
+}
+
+.border-input{
+    --bs-border-opacity: 1;
+    border-width: 3px;
+    border-color: rgba(
+        var(--c-red),
+        var(--bs-border-opacity)
+    ) !important;
 }
 
 .image-testimoni {
