@@ -16,6 +16,11 @@ body {
 .text-header {
   color: var(--c-header);
 }
+
+.text-main {
+  color: var(--c-primary);
+}
+
 .c-primary {
   background-color: var(--c-primary);
 }
@@ -25,7 +30,11 @@ body {
 }
 
 .rounded-navbar {
-  border-radius: 0% 0% 50% 50% / 0% 0% 60% 60%;
+  border-radius: 0% 0% 50% 50% / 0% 0% 50% 50%;
+}
+
+.rounded-footer {
+  border-radius: 15% 15% 0% 0% / 20% 20% 0% 0%;
 }
 
 .image-testimoni {
