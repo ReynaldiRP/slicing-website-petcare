@@ -50,12 +50,23 @@ body {
   text-align: center;
 }
 
+nav.navbar {
+  width: 100% !important;
+}
+
 @media (min-width: 768px) {
   .content-section {
     display: flex !important;
     flex-direction: row !important;
     justify-content: center !important;
     text-align: left !important;
+  }
+}
+
+@media (min-width: 375px) {
+  nav.navbar {
+    width: 80% !important;
+    padding-inline: 1rem !important;
   }
 }
 
