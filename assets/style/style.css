@@ -14,6 +14,9 @@
 body {
   background-color: var(--c-primary) !important;
   font-family: 'Avenir' !important;
+  background-image: url(../image/background-content.png);
+  background-repeat: repeat round;
+  margin: 0;
 }
 .bg-red {
   background-color: var(--c-red) !important;
@@ -108,7 +111,6 @@ nav.navbar {
   .rejuvenate-concept-row {
     flex-direction: row !important;
   }
-  
 }
 
 @media (min-width: 375px) {
@@ -206,4 +208,9 @@ li.nav-item a.nav-link,
 
 .background-badges-categories {
   background-color: var(--c-primary);
+}
+
+input[type='email'],
+input[type='email']::placeholder {
+  color: #f9f4d7 !important;
 }
