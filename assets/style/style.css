@@ -93,6 +93,10 @@ nav.navbar {
   flex-direction: column-reverse;
 }
 
+.custom-badges-categories {
+  margin-left: 20%;
+}
+
 @media (min-width: 768px) {
   .content-section {
     display: flex !important;
@@ -104,6 +108,7 @@ nav.navbar {
   .rejuvenate-concept-row {
     flex-direction: row !important;
   }
+  
 }
 
 @media (min-width: 375px) {
@@ -197,4 +202,8 @@ nav.navbar {
 li.nav-item a.nav-link,
 .text-socialmedia-footer {
   font-weight: normal !important;
+}
+
+.background-badges-categories {
+  background-color: var(--c-primary);
 }
