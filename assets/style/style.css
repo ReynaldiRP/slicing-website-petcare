@@ -27,6 +27,7 @@ body {
 
 .text-main {
   color: var(--c-primary);
+  font-size: 1.5em;
 }
 
 .c-primary {
@@ -88,10 +89,6 @@ nav.navbar {
   width: 100%;
 }
 
-.responsive-font-size {
-  font-size: 1.5rem;
-}
-
 .rejuvenate-concept-row {
   flex-direction: column-reverse;
 }
@@ -121,10 +118,6 @@ nav.navbar {
 
   .image-brand-concept {
     width: 65%;
-  }
-
-  .responsive-font-size {
-    font-size: 1.7rem;
   }
 }
 
