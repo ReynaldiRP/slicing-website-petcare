@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Avenir';
-  src: url('assets/fonts/TradeGothicLT/TradeGothicLT.ttf');
+  src: url('../font/TradeGothicLT/TradeGothicLT.ttf');
 }
 
 :root {
@@ -120,7 +120,7 @@ nav.navbar {
 
 @media (min-width: 375px) {
   nav.navbar {
-    width: 70% !important;
+    width: 75% !important;
     padding-inline: 1rem !important;
   }
 
@@ -235,4 +235,68 @@ input[type='email']::placeholder {
 
 .btn-outline-main:hover .fa-paw {
   color: white !important;
+}
+
+.custom-accordion {
+  margin: 40px 0;
+}
+.custom-accordion .custom-item {
+  border: none;
+  margin-bottom: 50px;
+  background: none;
+}
+.t-p {
+  color: black;
+  padding: 20px 0px 0px 5px;
+}
+.custom-accordion .custom-item .custom-item-header h2 button.btn.btn-link {
+  background: #e3dec4;
+  color: black;
+  border-radius: 0px;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 2.5;
+  text-decoration: none;
+}
+.custom-accordion .custom-item .custom-item-header {
+  border-bottom: none;
+  background: transparent;
+  padding: 0px;
+  margin: 2px;
+}
+
+.custom-accordion .custom-item .custom-item-header h2 button {
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.custom-accordion .custom-item .custom-item-header h2 button i.fa-angle-down {
+  float: right;
+  font-size: 30px;
+  color: #eca300;
+  background-color: black;
+  width: 60px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.custom-accordion
+  .custom-item
+  .custom-item-header
+  h2
+  button.collapsed
+  i.fa-angle-down {
+  transform: rotate(0deg);
+}
+
+.custom-accordion .custom-item .custom-item-header h2 button i.fa-angle-down {
+  transform: rotate(180deg);
+  transition: 0.5s;
 }
