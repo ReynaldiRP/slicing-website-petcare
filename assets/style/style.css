@@ -59,6 +59,10 @@ body {
   border-radius: 0% 0% 50% 50% / 0% 0% 50% 50%;
 }
 
+.rounded-content {
+  border-radius: 50% 50% 38% 38% / 38% 38% 30% 30%;
+}
+
 .rounded-footer {
   border-radius: 40% 40% 0% 0% / 25% 25% 0% 0%;
 }
@@ -67,6 +71,10 @@ body {
   --bs-border-opacity: 1;
   border-width: 3px;
   border-color: rgba(var(--c-red), var(--bs-border-opacity)) !important;
+}
+
+.custom-btn {
+  max-width: 9em;
 }
 
 .carousel-control-prev-icon {

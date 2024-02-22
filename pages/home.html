@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>how to</title>
+    <title>Home</title>
     <link rel="stylesheet" href="../assets/style/style.css" />
     <link rel="stylesheet" href="../assets/style/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -55,7 +55,8 @@
             <nav class="navbar navbar-expand-lg c-primary rounded-3 p-0">
                 <!-- Logo -->
                 <a class="navbar-brand d-lg-none" href="#">
-                    <img src="../assets/image/logo-kf 1.png" class="img-fluid" alt="gambar logo" />
+                    <img src="../assets/image/logo-kf 1.png" class="rounded-circle img-fluid" alt="gambar logo"
+                        width="80px" />
                 </a>
 
                 <!-- Hamburger Menu Button -->
@@ -66,27 +67,24 @@
 
                 <!-- Navigation Items -->
                 <div class="collapse navbar-collapse justify-content-lg-center" id="navbarNav">
-                    <ul class="navbar-nav text-black fw-bolder d-flex align-items-center gap-2">
+                    <ul class="navbar-nav text-black fw-bold d-flex align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="#">Brand Story</a>
                         </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./about.html">Brand Story</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./product.html">Product</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./testimoni.html">Testimony</a>
+                            <a class="nav-link" href="#">Testimony</a>
                         </li>
                         <li class="nav-item">
                             <!-- Display only on small screens -->
                             <a class="navbar-brand d-none d-lg-block" href="#">
-                                <img src="../assets/image/logo-kf 1.png" class="img-fluid" alt="gambar logo" />
+                                <img src="../assets/image/logo-kf 1.png" class="img-fluid" alt="gambar logo"
+                                    width="90px" />
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./howto.html">How To Buy</a>
+                            <a class="nav-link" href="#">How To Buy</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Pet Care</a>
@@ -94,8 +92,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact Us</a>
                         </li>
-                        <li class="nav-item d-flex ms-2 gap-1 align-items-center dropdown">
-                            <i class="fa-solid fa-magnifying-glass d-none d-lg-block" style="color: #000000"></i>
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 EN
@@ -111,17 +108,61 @@
             </nav>
         </div>
 
-        <section class="container d-flex flex-column align-items-center m-0 text-header">
-            <h1 class="text-uppercase fs-1" style="font-weight: 900">FIND A STOCKISTS</h1>
-            <p class="text-center opacity-50">
-                The Stocks Was Running Out? Find A Local Stockists Near You
-            </p>
+        <section class="container d-flex flex-column align-items-center mb-0 text-heading position-relative">
+            <img src="../assets/image/banner-1 1.png" alt="background gambar" class="img-fluid w-75"
+                style="z-index: 1" />
         </section>
     </header>
 
     <!-- Content -->
-    <main class="py-5 px-5">
-
+    <main class="">
+        <div class="container py-5 px-5">
+            <div class="row py-4 align-items-center">
+                <div class="col-md-6">
+                  <img src="../assets/image/pet-02 1-1.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-black fw-bold mb-3">Our Brand story</h2>
+                    <p class="fs-4">From wilderness and grassland to jungle and deep sea. The search for delicious food is endless</p>
+                    <div class="custom-btn btn btn-outline-main rounded-pill d-flex gap-3">
+                        <i class="fa-solid fa-paw fa-xl" style="color: #d22828"></i>
+                        <div>
+                          <span class="fw-bold">Read More</span>
+                        </div>
+                      </div>
+                </div>
+              </div>  
+        </div>
+        <div class="bg-red py-5 position-relative rounded-content d-flex flex-column align-items-center gap-5">
+            <!-- <div class="container"> -->
+                <div class="row py-4">
+                    <div class="row">
+                        <div class="col d-flex align-items-center">
+                            <img src="../assets/image/background-content.png" class="w-100" alt="..." />
+                        </div>
+                        <div class="col-6 text-center">
+                            <h2 class="text-header fw-bold mb-3">Professional Produced</h2>
+                            <p class="text-main fs-5">From wilderness and grassland to jungle and deep sea. The search for delicious food is endless</p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/SZOUfVCOjlA?si=NaMFEm8hqBaV8UbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="col d-flex align-items-center">
+                            <img src="../assets/image/background-content.png" class="mx-auto d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+        <div class="container py-5 px-5">
+            <div class="row py-4">
+                <h2 class="text-black fw-bold mb-3 text-center">Our Product</h2>
+                <div class="col-md-6 d-flex align-items-center">
+                  <img src="../assets/image/pet-02 1-1.png" class="img-fluid w-75 mx-auto" alt="">
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <img src="../assets/image/pet-02 2-1.png" class="img-fluid w-75 mx-auto" alt="">
+                </div>
+              </div>  
+        </div>
     </main>
 
     <!-- footer -->
