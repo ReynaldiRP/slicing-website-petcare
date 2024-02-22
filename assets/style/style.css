@@ -16,7 +16,8 @@ body {
   font-family: 'Avenir' !important;
   background-image: url(../image/background-content.png);
   background-repeat: repeat round;
-  margin: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 .bg-red {
   background-color: var(--c-red) !important;
@@ -81,10 +82,6 @@ body {
   text-align: center;
 }
 
-nav.navbar {
-  width: 100% !important;
-}
-
 .image-brand-concept {
   width: 100%;
 }
@@ -110,11 +107,19 @@ nav.navbar {
   }
 
   .text-main small {
-    font-size: 0.8em;
+    font-size: 0.4em;
+  }
+
+  .text-main p {
+    font-size: 0.7em;
   }
 
   .text-main h4 {
-    font-size: 1em;
+    font-size: 0.8em;
+  }
+
+  .text-main span {
+    font-size: 0.8em;
   }
 }
 

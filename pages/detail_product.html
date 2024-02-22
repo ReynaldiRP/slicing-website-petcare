@@ -15,7 +15,7 @@
   <body>
     <!-- Header -->
     <header
-      class="bg-red py-5 position-relative rounded-navbar d-flex flex-column gap-5"
+      class="container-fluid position-relative bg-red py-5 px-0 rounded-navbar d-flex flex-column gap-5"
     >
       <!-- Background Header -->
       <img
@@ -27,7 +27,10 @@
 
       <!-- Container Navbar -->
       <div class="container d-flex justify-content-center">
-        <nav class="navbar navbar-expand-lg c-primary rounded-3 p-0">
+        <nav
+          class="navbar navbar-expand-lg c-primary rounded-3 p-0 m-0"
+          style="width: max-content"
+        >
           <!-- Logo -->
           <a class="navbar-brand d-lg-none" href="#">
             <img
@@ -52,11 +55,11 @@
 
           <!-- Navigation Items -->
           <div
-            class="collapse navbar-collapse justify-content-lg-center"
+            class="collapse navbar-collapse justify-content-between justify-content-lg-center"
             id="navbarNav"
           >
             <ul
-              class="navbar-nav text-black fw-bolder d-flex align-items-center gap-2"
+              class="navbar-nav text-black fw-bolder d-flex align-items-center m-0 gap-2"
             >
               <li class="nav-item">
                 <a class="nav-link" href="#">Home</a>
@@ -118,19 +121,19 @@
       </div>
 
       <!-- Categories Badges -->
-      <section class="container" style="padding-left: 14%; z-index: 1">
+      <section class="container" style="padding-left: 11.5%; z-index: 1">
         <div class="row" style="width: max-content">
-          <div class="col-lg-1 me-3">
+          <div class="col-lg-1">
             <span class="badge rounded-pill background-badges-categories c-red"
               >Home</span
             >
           </div>
-          <div class="col-lg-1 me-4">
+          <div class="col-lg-1 ms-lg-3">
             <span class="badge rounded-pill background-badges-categories c-red"
               >Product</span
             >
           </div>
-          <div class="col-lg-1">
+          <div class="col-lg-1 ms-lg-4">
             <span
               class="badge rounded-pill background-badges-categories text-black"
               >Nature Gourmet Antartic Krill Small Breed Puppy</span
@@ -142,7 +145,7 @@
       <!-- Product Detail -->
       <section class="container" style="z-index: 1">
         <div class="row">
-          <div class="col-6 d-flex flex-column gap-4" style="padding-left: 16%">
+          <div class="col-6 d-flex flex-column gap-4" style="padding-left: 13%">
             <div class="d-flex flex-column gap-1">
               <div class="brand-food text-main d-flex flex-column">
                 <small style="font-size: 0.6em">KITCHEN FLAVOR</small>
@@ -151,12 +154,12 @@
 
               <div class="description-food text-main d-flex flex-column">
                 <h4 class="fw-bold mb-0">ANTARTIC KRILL</h4>
-                <small>Small Breed Puppy | 3-12 Months Old</small>
+                <p>Small Breed Puppy | 3-12 Months Old</p>
               </div>
             </div>
 
             <div class="format-food text-main d-flex flex-column gap-1">
-              <h5 class="fw-bold mb-0 text-uppercase">format</h5>
+              <h5 class="fw-bold mb-0 text-uppercase">formats</h5>
               <div class="flex-row">
                 <span
                   class="badge rounded-pill background-badges-categories c-red"
@@ -169,7 +172,7 @@
               </div>
             </div>
 
-            <div class="format-food text-main d-flex flex-column gap-1">
+            <div class="how-to-buy text-main d-flex flex-column gap-1 ps-lg-1">
               <h5 class="fw-bold mb-0 text-uppercase">how to buy</h5>
               <div class="flex-row">
                 <span
@@ -180,8 +183,8 @@
             </div>
           </div>
           <div class="col-6">
-            <div class="row position-relative" style="bottom: 15%">
-              <div class="col-8">
+            <div class="row position-relative" style="bottom: 10%">
+              <div class="col-12 col-lg-10 pb-5">
                 <img
                   src="../assets/image/PRODUCT/KF nature gourmet lamb complete food for medium & large dog-10kg 1.png"
                   alt="foto about navbar"
@@ -190,8 +193,8 @@
                 />
               </div>
               <div
-                class="col-2 d-flex flex-column align-items-center position-relative"
-                style="right: 10%"
+                class="col-2 d-none d-lg-flex flex-column align-items-center position-relative"
+                style="right: 4%"
               >
                 <img
                   src="../assets/image/PRODUCT/KF nature gourmet lamb complete food for medium & large dog-10kg 1.png"
