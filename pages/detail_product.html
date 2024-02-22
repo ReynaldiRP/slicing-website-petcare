@@ -11,23 +11,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-
-    <style>
-      body {
-        background-image: url(../assets/image/background-content.png);
-        background-repeat: repeat round;
-        margin: 0;
-      }
-
-      .categories-badges-container {
-        transition: flex-direction 0.3s ease;
-      }
-
-      input[type='email'],
-      input[type='email']::placeholder {
-        color: #f9f4d7 !important;
-      }
-    </style>
   </head>
   <body>
     <!-- Header -->
@@ -159,18 +142,41 @@
       <!-- Product Detail -->
       <section class="container" style="z-index: 1">
         <div class="row">
-          <div
-            class="col-6 d-flex flex-column gap-3 text-main"
-            style="padding-left: 16%"
-          >
-            <div class="brand-food">
-              <small>KITCHEN FLAVOR</small>
-              <h4 class="fw-bold mt-0">NATURE GOURMET</h4>
+          <div class="col-6 d-flex flex-column gap-4" style="padding-left: 16%">
+            <div class="d-flex flex-column gap-1">
+              <div class="brand-food text-main d-flex flex-column">
+                <small style="font-size: 0.6em">KITCHEN FLAVOR</small>
+                <h4 class="fw-bold mt-0">NATURE GOURMET</h4>
+              </div>
+
+              <div class="description-food text-main d-flex flex-column">
+                <h4 class="fw-bold mb-0">ANTARTIC KRILL</h4>
+                <small>Small Breed Puppy | 3-12 Months Old</small>
+              </div>
             </div>
 
-            <div class="description-food">
-              <h4 class="fw-bold mb-0">ANTARTIC KRILL</h4>
-              <small>Small Breed Puppy | 3-12 Months Old</small>
+            <div class="format-food text-main d-flex flex-column gap-1">
+              <h5 class="fw-bold mb-0 text-uppercase">format</h5>
+              <div class="flex-row">
+                <span
+                  class="badge rounded-pill background-badges-categories c-red"
+                  >1.5 Kg
+                </span>
+                <span
+                  class="badge rounded-pill background-badges-categories c-red"
+                  >10 Kg</span
+                >
+              </div>
+            </div>
+
+            <div class="format-food text-main d-flex flex-column gap-1">
+              <h5 class="fw-bold mb-0 text-uppercase">how to buy</h5>
+              <div class="flex-row">
+                <span
+                  class="badge rounded-pill background-badges-categories c-red"
+                >
+                </span>
+              </div>
             </div>
           </div>
           <div class="col-6">
@@ -220,15 +226,170 @@
 
     <!-- Main -->
     <main class="py-5">
-      <div class="container d-flex flex-column align-items-center"></div>
+      <div class="container-fluid d-flex flex-column align-items-center">
+        <div class="btn btn-outline-main rounded-pill py-3 px-5 d-flex gap-3">
+          <i class="fa-solid fa-paw fa-xl" style="color: #d22828"></i>
+          <div>
+            <span class="fw-semibold">Prefer To Buy In Store?</span>
+            <span class=""><small class="fst-italic">How To Buy</small></span>
+          </div>
+        </div>
+        <!-- Card Section -->
+        <section class="card-section mt-4">
+          <div class="row gap-3 justify-content-center">
+            <div class="col-6 col-md-4 col-lg-3">
+              <!-- First Card -->
+              <div class="card rounded-5 bg-red">
+                <div class="card-body d-flex flex-column align-items-center">
+                  <img
+                    src="../assets/image/pet-02 1-1.png"
+                    class="card-img-top"
+                    alt="gambar"
+                  />
+                  <h5 class="card-title">Heart Healthy</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <!-- Second Card -->
+              <div class="card rounded-5 bg-red">
+                <div class="card-body d-flex flex-column align-items-center">
+                  <img
+                    src="../assets/image/pet-02 1-1.png"
+                    class="card-img-top"
+                    alt="gambar"
+                  />
+                  <h5 class="card-title">Improves Digestive System</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <!-- Third Card -->
+              <div class="card rounded-5 bg-red">
+                <div class="card-body d-flex flex-column align-items-center">
+                  <img
+                    src="../assets/image/pet-02 1-1.png"
+                    class="card-img-top"
+                    alt="gambar"
+                  />
+                  <h5 class="card-title">Growth Supports</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Accordion FAQ -->
+        <section class="accordion-section" style="margin-block-start: 5%">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-9">
+              <div class="custom-accordion" id="accordionExample">
+                <div class="custom-item">
+                  <div class="custom-item-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        Ingredients
+                        <i class="fa fa-angle-down"></i>
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseOne"
+                    class="collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="t-p">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Necessitatibus aspernatur est ducimus fugit reprehenderit
+                      vero, harum odit, dignissimos assumenda quam sapiente
+                      molestiae itaque. Officia dicta quasi laborum
+                      reprehenderit voluptates tenetur?
+                    </div>
+                  </div>
+                </div>
+                <div class="custom-item">
+                  <div class="custom-item-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="true"
+                        aria-controls="collapseTwo"
+                      >
+                        Additional Nutrition
+                        <i class="fa fa-angle-down"></i>
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="t-p">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Necessitatibus aspernatur est ducimus fugit reprehenderit
+                      vero, harum odit, dignissimos assumenda quam sapiente
+                      molestiae itaque. Officia dicta quasi laborum
+                      reprehenderit voluptates tenetur?
+                    </div>
+                  </div>
+                </div>
+                <div class="custom-item">
+                  <div class="custom-item-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="true"
+                        aria-controls="collapseThree"
+                      >
+                        Nutritional Analysis
+                        <i class="fa fa-angle-down"></i>
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseThree"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="t-p">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Necessitatibus aspernatur est ducimus fugit reprehenderit
+                      vero, harum odit, dignissimos assumenda quam sapiente
+                      molestiae itaque. Officia dicta quasi laborum
+                      reprehenderit voluptates tenetur?
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <!-- footer -->
-    <footer class="pt-5 bg-red rounded-footer h-100 text-main">
+    <footer class="pt-5 bg-red rounded-footer h-100">
       <div class="container-fluid">
         <div class="row d-flex justify-content-center text-center g-3">
           <!-- Social Media Company -->
-          <div class="col-5 col-md-4 col-lg-3 mb-3">
+          <div class="col-5 col-md-4 col-lg-3 mb-3 text-main">
             <div
               class="d-flex flex-column align-items-center align-items-lg-start text-center text-md-start text-lg-start"
             >
@@ -243,7 +404,7 @@
             </div>
 
             <ul class="nav d-flex gap-4">
-              <li class="nav-item">
+              <li class="nav-custom-item">
                 <i
                   class="fa-brands fa-linkedin fa-xl"
                   style="color: #ffffff"
@@ -274,9 +435,9 @@
           </div>
 
           <!-- Useful links -->
-          <div class="col-5 col-md-4 col-lg-3 mb-3 text-start ps-5">
-            <h5 style="font-weight: 800">Useful links</h5>
-            <ul class="nav flex-column">
+          <div class="col-5 col-md-4 col-lg-3 text-start mt-auto ps-5">
+            <h5 class="text-main" style="font-weight: 800">Useful links</h5>
+            <ul class="nav flex-column" style="font-size: 1rem">
               <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-white">Testimony </a>
               </li>
@@ -301,7 +462,7 @@
           </div>
 
           <!-- Signup -->
-          <div class="col-12 col-lg-5 mb-3 pt-3">
+          <div class="col-12 col-lg-5 mb-3 pt-3 text-main">
             <form>
               <h5 class="mb-4 text-start" style="font-weight: 800">
                 Get updates and stay connected

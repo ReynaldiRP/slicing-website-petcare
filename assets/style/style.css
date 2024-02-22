@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Avenir';
-  src: url('assets/fonts/TradeGothicLT/TradeGothicLT.ttf');
+  src: url('../font/TradeGothicLT/TradeGothicLT.ttf');
 }
 
 :root {
@@ -14,6 +14,9 @@
 body {
   background-color: var(--c-primary) !important;
   font-family: 'Avenir' !important;
+  background-image: url(../image/background-content.png);
+  background-repeat: repeat round;
+  margin: 0;
 }
 .bg-red {
   background-color: var(--c-red) !important;
@@ -24,6 +27,7 @@ body {
 
 .text-main {
   color: var(--c-primary);
+  font-size: 1.5em;
 }
 
 .c-primary {
@@ -85,10 +89,6 @@ nav.navbar {
   width: 100%;
 }
 
-.responsive-font-size {
-  font-size: 1.5rem;
-}
-
 .rejuvenate-concept-row {
   flex-direction: column-reverse;
 }
@@ -108,21 +108,24 @@ nav.navbar {
   .rejuvenate-concept-row {
     flex-direction: row !important;
   }
-  
+
+  .text-main small {
+    font-size: 0.8em;
+  }
+
+  .text-main h4 {
+    font-size: 1em;
+  }
 }
 
 @media (min-width: 375px) {
   nav.navbar {
-    width: 70% !important;
+    width: 75% !important;
     padding-inline: 1rem !important;
   }
 
   .image-brand-concept {
     width: 65%;
-  }
-
-  .responsive-font-size {
-    font-size: 1.7rem;
   }
 }
 
@@ -208,10 +211,93 @@ li.nav-item a.nav-link,
   background-color: var(--c-primary);
 }
 
-.footer-information{
-  background-color: var(--c-red) !important;
-  color: var(--c-header) !important;
-  font-weight: bold !important;
-  width: 400px !important;
-  margin-right: 20px;
+input[type='email'],
+input[type='email']::placeholder {
+  color: #f9f4d7 !important;
 }
+
+.btn-outline-main {
+  --bs-btn-color: var(--c-red) !important;
+  --bs-btn-border-color: var(--c-red) !important;
+  --bs-btn-hover-color: #fff !important;
+  --bs-btn-hover-bg: var(--c-red) !important;
+  --bs-btn-hover-border-color: var(--c-red) !important;
+  --bs-btn-focus-shadow-rgb: 13, 110, 253 !important;
+  --bs-btn-active-color: #fff !important;
+  --bs-btn-active-bg: var(--c-red) !important;
+  --bs-btn-active-border-color: var(--c-red) !important;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) !important;
+  --bs-btn-disabled-color: var(--c-red) !important;
+  --bs-btn-disabled-bg: transparent !important;
+  --bs-btn-disabled-border-color: var(--c-red) !important;
+  --bs-gradient: none !important;
+}
+
+.btn-outline-main:hover .fa-paw {
+  color: white !important;
+}
+
+.custom-accordion {
+  margin: 40px 0;
+}
+.custom-accordion .custom-item {
+  border: none;
+  margin-bottom: 50px;
+  background: none;
+}
+.t-p {
+  color: black;
+  padding: 20px 0px 0px 5px;
+}
+.custom-accordion .custom-item .custom-item-header h2 button.btn.btn-link {
+  background: #e3dec4;
+  color: black;
+  border-radius: 0px;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 2.5;
+  text-decoration: none;
+}
+.custom-accordion .custom-item .custom-item-header {
+  border-bottom: none;
+  background: transparent;
+  padding: 0px;
+  margin: 2px;
+}
+
+.custom-accordion .custom-item .custom-item-header h2 button {
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.custom-accordion .custom-item .custom-item-header h2 button i.fa-angle-down {
+  float: right;
+  font-size: 30px;
+  color: #eca300;
+  background-color: black;
+  width: 60px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.custom-accordion
+  .custom-item
+  .custom-item-header
+  h2
+  button.collapsed
+  i.fa-angle-down {
+  transform: rotate(0deg);
+}
+
+.custom-accordion .custom-item .custom-item-header h2 button i.fa-angle-down {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+>>>>>>> 0514f564e616d2be52811fa372a331aeefba9230
