@@ -1,454 +1,601 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>how to</title>
     <link rel="stylesheet" href="../assets/style/style.css" />
     <link rel="stylesheet" href="../assets/style/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
     <style>
-        body {
-            background-image: url(../assets/image/background-content.png);
-            background-repeat: repeat round;
-            margin: 0;
-        }
+      body {
+        background-image: url(../assets/image/background-content.png);
+        background-repeat: repeat round;
+        margin: 0;
+      }
 
-        input[type='email'],
-        input[type='email']::placeholder {
-            color: #f9f4d7 !important;
-        }
+      input[type='email'],
+      input[type='email']::placeholder {
+        color: #f9f4d7 !important;
+      }
 
-        .search {
-            border-radius: 60px;
-            background-color: #ECE6C8;
-            height: 60px;
-            width: 120%;
-        }
+      .search {
+        border-radius: 60px;
+        background-color: #ece6c8;
+        height: 60px;
+        width: 120%;
+      }
 
-        .button-addon2 {
-            background-color: #d22828;
-            border-radius: 60px;
-            margin-left: -54px;
-        }
+      .button-addon2 {
+        background-color: #d22828;
+        border-radius: 60px;
+        margin-left: -54px;
+      }
 
-        .stockist {
-            margin-top: 20px !important;
-            background-color: transparent;
-            border-color: #231916;
-            border-radius: 16px;
-        }
+      .stockist {
+        margin-top: 20px !important;
+        background-color: transparent;
+        border-color: #231916;
+        border-radius: 16px;
+      }
 
-        .icon-commerce {
-            border: 2px solid #d22828;
-            width: 90px !important;
-            height: 70px !important;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 30px;
-        }
+      .icon-commerce {
+        border: 2px solid #d22828;
+        width: 90px !important;
+        height: 70px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
-    <header class="bg-red py-5 position-relative rounded-navbar d-flex flex-column align-items-center gap-5">
-        <!-- Background Header -->
-        <img src="../assets/image/pattern-navbar.png" alt="background gambar"
-            class="position-absolute z-0 bottom-25 w-100 object-fit-cover" style="opacity: 0.6" />
+    <header
+      class="bg-red py-5 position-relative rounded-navbar d-flex flex-column align-items-center gap-5"
+    >
+      <!-- Background Header -->
+      <img
+        src="../assets/image/pattern-navbar.png"
+        alt="background gambar"
+        class="position-absolute z-0 bottom-25 w-100 object-fit-cover"
+        style="opacity: 0.6"
+      />
 
-        <!-- Container Navbar -->
-        <div class="container d-flex justify-content-center">
-            <nav class="navbar navbar-expand-lg c-primary rounded-3 p-0">
-                <!-- Logo -->
-                <a class="navbar-brand d-lg-none" href="#">
-                    <img src="../assets/image/logo-kf 1.png" class="img-fluid" alt="gambar logo" />
+      <!-- Container Navbar -->
+      <div class="container d-flex justify-content-center">
+        <nav class="navbar navbar-expand-lg c-primary rounded-3 p-0">
+          <!-- Logo -->
+          <a class="navbar-brand d-lg-none" href="#">
+            <img
+              src="../assets/image/logo-kf 1.png"
+              class="img-fluid"
+              alt="gambar logo"
+            />
+          </a>
+
+          <!-- Hamburger Menu Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navigation Items -->
+          <div
+            class="collapse navbar-collapse justify-content-lg-center"
+            id="navbarNav"
+          >
+            <ul
+              class="navbar-nav text-black fw-bolder d-flex align-items-center gap-2"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">Brand Story</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./testimoni.html">Testimony</a>
+              </li>
+              <li class="nav-item">
+                <!-- Display only on small screens -->
+                <a class="navbar-brand d-none d-lg-block" href="#">
+                  <img
+                    src="../assets/image/logo-kf 1.png"
+                    class="img-fluid"
+                    alt="gambar logo"
+                  />
                 </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">How To Buy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pet Care</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li
+                class="nav-item d-flex ms-2 gap-1 align-items-center dropdown"
+              >
+                <i
+                  class="fa-solid fa-magnifying-glass d-none d-lg-block"
+                  style="color: #000000"
+                ></i>
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="languageDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  EN
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">ID</a></li>
+                  <li><a class="dropdown-item" href="#">EU</a></li>
+                  <li><a class="dropdown-item" href="#">CN</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
 
-                <!-- Hamburger Menu Button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Navigation Items -->
-                <div class="collapse navbar-collapse justify-content-lg-center" id="navbarNav">
-                    <ul class="navbar-nav text-black fw-bolder d-flex align-items-center gap-2">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./about.html">Brand Story</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./product.html">Product</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./testimoni.html">Testimony</a>
-                        </li>
-                        <li class="nav-item">
-                            <!-- Display only on small screens -->
-                            <a class="navbar-brand d-none d-lg-block" href="#">
-                                <img src="../assets/image/logo-kf 1.png" class="img-fluid" alt="gambar logo" />
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">How To Buy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pet Care</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
-                        </li>
-                        <li class="nav-item d-flex ms-2 gap-1 align-items-center dropdown">
-                            <i class="fa-solid fa-magnifying-glass d-none d-lg-block" style="color: #000000"></i>
-                            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                EN
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">ID</a></li>
-                                <li><a class="dropdown-item" href="#">EU</a></li>
-                                <li><a class="dropdown-item" href="#">CN</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-
-        <section class="container d-flex flex-column align-items-center m-0 text-header">
-            <h1 class="text-uppercase fs-1" style="font-weight: 900">FIND A STOCKISTS</h1>
-            <p class="text-center opacity-50">
-                The Stocks Was Running Out? Find A Local Stockists Near You
-            </p>
-        </section>
+      <section
+        class="container d-flex flex-column align-items-center m-0 text-header"
+      >
+        <h1 class="text-uppercase fs-1" style="font-weight: 900">
+          FIND A STOCKISTS
+        </h1>
+        <p class="text-center opacity-50">
+          The Stocks Was Running Out? Find A Local Stockists Near You
+        </p>
+      </section>
     </header>
 
     <!-- Content -->
     <main class="py-5 px-5">
-        <!-- Testimoni Content -->
-        <div class="container">
-            <div class="search-bar align-items-center">
-                <div class="d-flex mb-3">
-                    <input type="text" class="form-control search" placeholder="DKI JAKARTA" aria-label="Search for..."
-                        aria-describedby="button-addon2">
-                    <button class="button-addon2" type="button"><i class="fa-solid fa-search px-3"></i></button>
-                </div>
-            </div>
+      <!-- Testimoni Content -->
+      <div class="container">
+        <div class="search-bar align-items-center">
+          <div class="d-flex mb-3">
+            <input
+              type="text"
+              class="form-control search"
+              placeholder="DKI JAKARTA"
+              aria-label="Search for..."
+              aria-describedby="button-addon2"
+            />
+            <button class="button-addon2" type="button">
+              <i class="fa-solid fa-search px-3"></i>
+            </button>
+          </div>
         </div>
+      </div>
 
-        <!-- card -->
-        <section class="d-flex justify-content-center align-items-center howto mt-5"
-            style="margin-left: 50px !important; margin-right: 50px !important">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card stockist">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold mb-5">Hoora Hoora Pet Shop</h5>
-                            <div class="d-flex align-item-center">
-                                <i class="fas fa-map-signs" style="margin-right: 10px;"></i>
-                                <h6 class="card-subtitle mb-2 text-muted">Address line for retail store lorem ipsum
-                                    dolor
-                                    sit
-                                    amet
-                                    consectetur dolor sit amet</h6>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-phone" style="margin-right: 10px;"></i>
-                                <p class="card-text">(021) 123 456 7</p>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>
-                                <a href="https://www.google.com/maps" class="card-link">Open on Google maps</a>
-                            </div>
-                        </div>
-                    </div>
+      <!-- card -->
+      <section
+        class="d-flex justify-content-center align-items-center howto mt-5"
+        style="margin-left: 50px !important; margin-right: 50px !important"
+      >
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card stockist">
+              <div class="card-body">
+                <h5 class="card-title fw-bold mb-5">Hoora Hoora Pet Shop</h5>
+                <div class="d-flex align-item-center">
+                  <i class="fas fa-map-signs" style="margin-right: 10px"></i>
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    Address line for retail store lorem ipsum dolor sit amet
+                    consectetur dolor sit amet
+                  </h6>
                 </div>
-                <div class="col-md-4">
-                    <div class="card stockist">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold mb-5">Hoora Hoora Pet Shop</h5>
-                            <div class="d-flex align-item-center">
-                                <i class="fas fa-map-signs" style="margin-right: 10px;"></i>
-                                <h6 class="card-subtitle mb-2 text-muted">Address line for retail store lorem ipsum
-                                    dolor
-                                    sit
-                                    amet
-                                    consectetur dolor sit amet</h6>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-phone" style="margin-right: 10px;"></i>
-                                <p class="card-text">(021) 123 456 7</p>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>
-                                <a href="https://www.google.com/maps" class="card-link">Open on Google maps</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-phone" style="margin-right: 10px"></i>
+                  <p class="card-text">(021) 123 456 7</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="card stockist">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold mb-5">Hoora Hoora Pet Shop</h5>
-                            <div class="d-flex align-item-center">
-                                <i class="fas fa-map-signs" style="margin-right: 10px;"></i>
-                                <h6 class="card-subtitle mb-2 text-muted">Address line for retail store lorem ipsum
-                                    dolor
-                                    sit
-                                    amet
-                                    consectetur dolor sit amet</h6>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-phone" style="margin-right: 10px;"></i>
-                                <p class="card-text">(021) 123 456 7</p>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>
-                                <a href="https://www.google.com/maps" class="card-link">Open on Google maps</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="d-flex align-items-center">
+                  <i
+                    class="fas fa-map-marker-alt"
+                    style="margin-right: 10px"
+                  ></i>
+                  <a href="https://www.google.com/maps" class="card-link"
+                    >Open on Google maps</a
+                  >
                 </div>
-                <div class="col-md-4">
-                    <div class="card stockist">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold mb-5">Hoora Hoora Pet Shop</h5>
-                            <div class="d-flex align-item-center">
-                                <i class="fas fa-map-signs" style="margin-right: 10px;"></i>
-                                <h6 class="card-subtitle mb-2 text-muted">Address line for retail store lorem ipsum
-                                    dolor
-                                    sit
-                                    amet
-                                    consectetur dolor sit amet</h6>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-phone" style="margin-right: 10px;"></i>
-                                <p class="card-text">(021) 123 456 7</p>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>
-                                <a href="https://www.google.com/maps" class="card-link">Open on Google maps</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card stockist">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold mb-5">Hoora Hoora Pet Shop</h5>
-                            <div class="d-flex align-item-center">
-                                <i class="fas fa-map-signs" style="margin-right: 10px;"></i>
-                                <h6 class="card-subtitle mb-2 text-muted">Address line for retail store lorem ipsum
-                                    dolor
-                                    sit
-                                    amet
-                                    consectetur dolor sit amet</h6>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-phone" style="margin-right: 10px;"></i>
-                                <p class="card-text">(021) 123 456 7</p>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>
-                                <a href="https://www.google.com/maps" class="card-link">Open on Google maps</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card stockist">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold mb-5">Hoora Hoora Pet Shop</h5>
-                            <div class="d-flex align-item-center">
-                                <i class="fas fa-map-signs" style="margin-right: 10px;"></i>
-                                <h6 class="card-subtitle mb-2 text-muted">Address line for retail store lorem ipsum
-                                    dolor
-                                    sit
-                                    amet
-                                    consectetur dolor sit amet</h6>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-phone" style="margin-right: 10px;"></i>
-                                <p class="card-text">(021) 123 456 7</p>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>
-                                <a href="https://www.google.com/maps" class="card-link">Open on Google maps</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card stockist">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold mb-5">Hoora Hoora Pet Shop</h5>
-                            <div class="d-flex align-item-center">
-                                <i class="fas fa-map-signs" style="margin-right: 10px;"></i>
-                                <h6 class="card-subtitle mb-2 text-muted">Address line for retail store lorem ipsum
-                                    dolor
-                                    sit
-                                    amet
-                                    consectetur dolor sit amet</h6>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-phone" style="margin-right: 10px;"></i>
-                                <p class="card-text">(021) 123 456 7</p>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i>
-                                <a href="https://www.google.com/maps" class="card-link">Open on Google maps</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
-
-        <!-- information -->
-        <section class="container d-flex flex-column align-items-center mt-5">
-            <h1 class="fw-bold mb-2 text-center" style="font-weight: 900; margin-top: 50px;">Didn’t Found The Stockists?
-            </h1>
-            <p class="text-center text-muted">
-                You can drop us a line via <b><i style="color: red;">contact us</i></b> page
-            </p>
-            <div class="d-flex align-items-center">
-                <div class="row">
-                    <div class="col-md">
-                        <input type="text" class="form-control text-center rounded-pill p-3 footer-information"
-                            value="Shop online through these apps">
-                    </div>
-                    <div class="col-md">
-                        <div class="d-flex align-items-center justify-content-center gap-4">
-                            <div class="icon-commerce rounded-circle">
-                                <img src="../assets/image/icon-ecommerce/Vector-1.png" width="35px" alt="">
-                            </div>
-                            <div class="icon-commerce rounded-circle">
-                                <img src="../assets/image/icon-ecommerce/Vector-2.png" width="35px" alt="">
-                            </div>
-                            <div class="icon-commerce rounded-circle">
-                                <img src="../assets/image/icon-ecommerce/Vector-3.png" width="35px" alt="">
-                            </div>
-                            <div class="icon-commerce rounded-circle">
-                                <img src="../assets/image/icon-ecommerce/Vector-4.png" width="35px" alt="">
-                            </div>
-                            <div class="icon-commerce rounded-circle">
-                                <img src="../assets/image/icon-ecommerce/Vector.png" width="35px" alt="">
-                            </div>
-                        </div>
-                    </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card stockist">
+              <div class="card-body">
+                <h5 class="card-title fw-bold mb-5">Hoora Hoora Pet Shop</h5>
+                <div class="d-flex align-item-center">
+                  <i class="fas fa-map-signs" style="margin-right: 10px"></i>
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    Address line for retail store lorem ipsum dolor sit amet
+                    consectetur dolor sit amet
+                  </h6>
                 </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-phone" style="margin-right: 10px"></i>
+                  <p class="card-text">(021) 123 456 7</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i
+                    class="fas fa-map-marker-alt"
+                    style="margin-right: 10px"
+                  ></i>
+                  <a href="https://www.google.com/maps" class="card-link"
+                    >Open on Google maps</a
+                  >
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card stockist">
+              <div class="card-body">
+                <h5 class="card-title fw-bold mb-5">Hoora Hoora Pet Shop</h5>
+                <div class="d-flex align-item-center">
+                  <i class="fas fa-map-signs" style="margin-right: 10px"></i>
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    Address line for retail store lorem ipsum dolor sit amet
+                    consectetur dolor sit amet
+                  </h6>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-phone" style="margin-right: 10px"></i>
+                  <p class="card-text">(021) 123 456 7</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i
+                    class="fas fa-map-marker-alt"
+                    style="margin-right: 10px"
+                  ></i>
+                  <a href="https://www.google.com/maps" class="card-link"
+                    >Open on Google maps</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card stockist">
+              <div class="card-body">
+                <h5 class="card-title fw-bold mb-5">Hoora Hoora Pet Shop</h5>
+                <div class="d-flex align-item-center">
+                  <i class="fas fa-map-signs" style="margin-right: 10px"></i>
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    Address line for retail store lorem ipsum dolor sit amet
+                    consectetur dolor sit amet
+                  </h6>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-phone" style="margin-right: 10px"></i>
+                  <p class="card-text">(021) 123 456 7</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i
+                    class="fas fa-map-marker-alt"
+                    style="margin-right: 10px"
+                  ></i>
+                  <a href="https://www.google.com/maps" class="card-link"
+                    >Open on Google maps</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card stockist">
+              <div class="card-body">
+                <h5 class="card-title fw-bold mb-5">Hoora Hoora Pet Shop</h5>
+                <div class="d-flex align-item-center">
+                  <i class="fas fa-map-signs" style="margin-right: 10px"></i>
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    Address line for retail store lorem ipsum dolor sit amet
+                    consectetur dolor sit amet
+                  </h6>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-phone" style="margin-right: 10px"></i>
+                  <p class="card-text">(021) 123 456 7</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i
+                    class="fas fa-map-marker-alt"
+                    style="margin-right: 10px"
+                  ></i>
+                  <a href="https://www.google.com/maps" class="card-link"
+                    >Open on Google maps</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card stockist">
+              <div class="card-body">
+                <h5 class="card-title fw-bold mb-5">Hoora Hoora Pet Shop</h5>
+                <div class="d-flex align-item-center">
+                  <i class="fas fa-map-signs" style="margin-right: 10px"></i>
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    Address line for retail store lorem ipsum dolor sit amet
+                    consectetur dolor sit amet
+                  </h6>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-phone" style="margin-right: 10px"></i>
+                  <p class="card-text">(021) 123 456 7</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i
+                    class="fas fa-map-marker-alt"
+                    style="margin-right: 10px"
+                  ></i>
+                  <a href="https://www.google.com/maps" class="card-link"
+                    >Open on Google maps</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card stockist">
+              <div class="card-body">
+                <h5 class="card-title fw-bold mb-5">Hoora Hoora Pet Shop</h5>
+                <div class="d-flex align-item-center">
+                  <i class="fas fa-map-signs" style="margin-right: 10px"></i>
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    Address line for retail store lorem ipsum dolor sit amet
+                    consectetur dolor sit amet
+                  </h6>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-phone" style="margin-right: 10px"></i>
+                  <p class="card-text">(021) 123 456 7</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i
+                    class="fas fa-map-marker-alt"
+                    style="margin-right: 10px"
+                  ></i>
+                  <a href="https://www.google.com/maps" class="card-link"
+                    >Open on Google maps</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        </section>
+      <!-- information -->
+      <section class="container d-flex flex-column align-items-center mt-5">
+        <h1
+          class="fw-bold mb-2 text-center"
+          style="font-weight: 900; margin-top: 50px"
+        >
+          Didn’t Found The Stockists?
+        </h1>
+        <p class="text-center text-muted">
+          You can drop us a line via
+          <b><i style="color: red">contact us</i></b> page
+        </p>
+        <div class="d-flex align-items-center">
+          <div class="row gap-3 gap-lg-0">
+            <div class="col-md-12 col-lg-6">
+              <input
+                type="text"
+                class="form-control text-center rounded-pill p-3 footer-information"
+                value="Shop online through these apps"
+              />
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div
+                class="d-flex align-items-center justify-content-center gap-4"
+              >
+                <div class="icon-commerce rounded-circle">
+                  <img
+                    src="../assets/image/icon-ecommerce/Vector-1.png"
+                    width="35px"
+                    alt=""
+                  />
+                </div>
+                <div class="icon-commerce rounded-circle">
+                  <img
+                    src="../assets/image/icon-ecommerce/Vector-2.png"
+                    width="35px"
+                    alt=""
+                  />
+                </div>
+                <div class="icon-commerce rounded-circle">
+                  <img
+                    src="../assets/image/icon-ecommerce/Vector-3.png"
+                    width="35px"
+                    alt=""
+                  />
+                </div>
+                <div class="icon-commerce rounded-circle">
+                  <img
+                    src="../assets/image/icon-ecommerce/Vector-4.png"
+                    width="35px"
+                    alt=""
+                  />
+                </div>
+                <div class="icon-commerce rounded-circle">
+                  <img
+                    src="../assets/image/icon-ecommerce/Vector.png"
+                    width="35px"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- footer -->
-    <footer class=" pt-5 bg-red rounded-footer h-100 text-white">
-        <div class="container-fluid">
-            <div class="row d-flex justify-content-center text-center g-3">
-                <!-- Social Media Company -->
-                <div class="col-5 col-md-4 col-lg-3 mb-3">
-                    <div class="align-items-center align-items-lg-start text-md-start text-lg-start">
-                        <img src="../assets/image/logo-kf 1.png" class="text-center img-fluid" alt="gambar logo" />
-                        <p class="text-socialmedia-footer">
-                            Stay in touch and keep up to date with the latest news.
-                        </p>
-                    </div>
+    <footer class="pt-5 bg-red rounded-footer h-100 text-white">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center text-center g-3">
+          <!-- Social Media Company -->
+          <div class="col-5 col-md-4 col-lg-3 mb-3">
+            <div
+              class="align-items-center align-items-lg-start text-md-start text-lg-start"
+            >
+              <img
+                src="../assets/image/logo-kf 1.png"
+                class="text-center img-fluid"
+                alt="gambar logo"
+              />
+              <p class="text-socialmedia-footer">
+                Stay in touch and keep up to date with the latest news.
+              </p>
+            </div>
 
-                    <ul class="nav d-flex gap-4">
-                        <li class="nav-item">
-                            <i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff"></i>
-                        </li>
-                        <li class="nav-item">
-                            <i class="fa-brands fa-x-twitter fa-xl" style="color: #ffffff"></i>
-                        </li>
-                        <li class="nav-item">
-                            <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff"></i>
-                        </li>
-                        <li class="nav-item">
-                            <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff"></i>
-                        </li>
-                        <li class="nav-item">
-                            <i class="fa-brands fa-tiktok fa-xl" style="color: #ffffff"></i>
-                        </li>
-                    </ul>
-                </div>
+            <ul class="nav d-flex gap-4">
+              <li class="nav-item">
+                <i
+                  class="fa-brands fa-linkedin fa-xl"
+                  style="color: #ffffff"
+                ></i>
+              </li>
+              <li class="nav-item">
+                <i
+                  class="fa-brands fa-x-twitter fa-xl"
+                  style="color: #ffffff"
+                ></i>
+              </li>
+              <li class="nav-item">
+                <i
+                  class="fa-brands fa-facebook fa-xl"
+                  style="color: #ffffff"
+                ></i>
+              </li>
+              <li class="nav-item">
+                <i
+                  class="fa-brands fa-instagram fa-xl"
+                  style="color: #ffffff"
+                ></i>
+              </li>
+              <li class="nav-item">
+                <i class="fa-brands fa-tiktok fa-xl" style="color: #ffffff"></i>
+              </li>
+            </ul>
+          </div>
 
-                <!-- Useful links -->
-                <div class="col-5 col-md-4 col-lg-3 mb-3 text-start ps-5">
-                    <h5 style="font-weight: 800">Useful links</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-white">Testimony </a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-white">Pet Care</a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-white">FAQ</a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-white">Contact Us</a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-white">Terms & Conditions
-                            </a>
-                        </li>
-                        <li class="nav-item mb-2">
-                            <a href="#" class="nav-link p-0 text-white">Privacy policy </a>
-                        </li>
-                    </ul>
-                </div>
+          <!-- Useful links -->
+          <div class="col-5 col-md-4 col-lg-3 mb-3 text-start ps-5">
+            <h5 style="font-weight: 800">Useful links</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Testimony </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Pet Care</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">FAQ</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Contact Us</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white"
+                  >Terms & Conditions
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Privacy policy </a>
+              </li>
+            </ul>
+          </div>
 
-                <!-- Signup -->
-                <div class="col-12 col-lg-5 mb-3 pt-3">
-                    <form>
-                        <h5 class="mb-4 text-start" style="font-weight: 800">
-                            Get updates and stay connected
-                        </h5>
-                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                            <label for="email" class="visually-hidden">enter your email address</label>
-                            <input id="email" type="email" class="form-control rounded-pill" placeholder="Email address"
-                                style="background: transparent" />
-                            <button class="btn btn-primary rounded-pill flex-shrink-0" type="button" style="
+          <!-- Signup -->
+          <div class="col-12 col-lg-5 mb-3 pt-3">
+            <form>
+              <h5 class="mb-4 text-start" style="font-weight: 800">
+                Get updates and stay connected
+              </h5>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="email" class="visually-hidden"
+                  >enter your email address</label
+                >
+                <input
+                  id="email"
+                  type="email"
+                  class="form-control rounded-pill"
+                  placeholder="Email address"
+                  style="background: transparent"
+                />
+                <button
+                  class="btn btn-primary rounded-pill flex-shrink-0"
+                  type="button"
+                  style="
                     background-color: #f9f4d7;
                     color: #d22828;
                     border: none;
-                  ">
-                                Sign Up
-                            </button>
-                        </div>
-                    </form>
-                    <div class="row mt-4">
-                        <div class="col-3 d-flex">
-                            <img src="../assets/image/footer/Vector.png" alt="" class="img-fluid" />
-                        </div>
-                        <div class="col-3">
-                            <img src="../assets/image/footer/aafco.png" alt="" class="img-fluid" />
-                        </div>
-                    </div>
-                </div>
+                  "
+                >
+                  Sign Up
+                </button>
+              </div>
+            </form>
+            <div class="row mt-4">
+              <div class="col-3 d-flex">
+                <img
+                  src="../assets/image/footer/Vector.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-3">
+                <img
+                  src="../assets/image/footer/aafco.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
             </div>
+          </div>
         </div>
-        
+      </div>
 
-        <!-- Footer license website -->
-        <div class="d-flex flex-sm-row justify-content-center align-items-center mt-4"
-            style="border-top: 1px solid black">
-            <p>&copy; Kitchen Flavor, 2024.</p>
-        </div>
+      <!-- Footer license website -->
+      <div
+        class="d-flex flex-sm-row justify-content-center align-items-center mt-4"
+        style="border-top: 1px solid black"
+      >
+        <p>&copy; Kitchen Flavor, 2024.</p>
+      </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
     <script src="../assets/script/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
-</body>
-
+  </body>
 </html>

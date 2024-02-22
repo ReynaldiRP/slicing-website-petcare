@@ -132,6 +132,10 @@ body {
   .image-brand-concept {
     width: 65%;
   }
+
+  .footer-information {
+    margin-left: 65px;
+  }
 }
 
 .custom-pagination {
