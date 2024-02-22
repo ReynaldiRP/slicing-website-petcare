@@ -300,4 +300,10 @@ input[type='email']::placeholder {
   transform: rotate(180deg);
   transition: 0.5s;
 }
->>>>>>> 0514f564e616d2be52811fa372a331aeefba9230
+.footer-information {
+  background-color: var(--c-red) !important;
+  color: var(--c-header) !important;
+  font-weight: bold !important;
+  width: 400px !important;
+  margin-right: 20px;
+}
