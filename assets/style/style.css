@@ -18,6 +18,7 @@ body {
   background-repeat: repeat round;
   margin: 0 !important;
   padding: 0 !important;
+  opacity: inherit;
 }
 .bg-red {
   background-color: var(--c-red) !important;
