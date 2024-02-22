@@ -207,3 +207,11 @@ li.nav-item a.nav-link,
 .background-badges-categories {
   background-color: var(--c-primary);
 }
+
+.footer-information{
+  background-color: var(--c-red) !important;
+  color: var(--c-header) !important;
+  font-weight: bold !important;
+  width: 400px !important;
+  margin-right: 20px;
+}
