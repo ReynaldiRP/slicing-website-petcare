@@ -24,7 +24,7 @@ body {
   background-color: var(--c-red) !important;
 }
 .text-header {
-  color: var(--c-header);
+  color: var(--c-header) !important;
 }
 
 .text-main {
@@ -150,6 +150,10 @@ body {
 
   .text-main p {
     font-size: 0.8em;
+  }
+
+  .text-main h2 {
+    font-size: 1em;
   }
 
   .text-main h4 {
