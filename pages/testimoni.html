@@ -14,7 +14,7 @@
   <body>
     <!-- Header -->
     <header
-      class="container-fluid position-relative bg-red py-5 px-0 rounded-navbar d-flex flex-column gap-5"
+      class="container-fluid position-relative bg-red p-0 rounded-navbar d-flex flex-column gap-5"
     >
       <!-- Background Header -->
       <img
@@ -25,101 +25,91 @@
       />
 
       <!-- Container Navbar -->
-      <div class="container d-flex justify-content-center">
-        <nav
-          class="navbar navbar-expand-lg c-primary rounded-3 p-0 m-0"
-          style="width: max-content"
+      <nav class="navbar navbar-expand-lg c-primary px-2">
+        <!-- Logo -->
+        <a class="navbar-brand d-lg-none" href="#">
+          <img
+            src="../assets/image/logo-kf 1.png"
+            class="img-fluid"
+            alt="gambar logo"
+          />
+        </a>
+
+        <!-- Hamburger Menu Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <!-- Logo -->
-          <a class="navbar-brand d-lg-none" href="#">
-            <img
-              src="../assets/image/logo-kf 1.png"
-              class="img-fluid"
-              alt="gambar logo"
-            />
-          </a>
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <!-- Hamburger Menu Button -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+        <!-- Navigation Items -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul
+            class="navbar-nav w-100 d-flex justify-content-evenly align-items-center text-black fw-bolder"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <!-- Navigation Items -->
-          <div
-            class="collapse navbar-collapse justify-content-between justify-content-lg-center"
-            id="navbarNav"
-          >
-            <ul
-              class="navbar-nav text-black fw-bolder d-flex align-items-center m-0 gap-2"
-            >
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./about.html">Brand Story</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./testimoni.html">Testimony</a>
-              </li>
-              <li class="nav-item">
-                <!-- Display only on small screens -->
-                <a class="navbar-brand d-none d-lg-block" href="#">
-                  <img
-                    src="../assets/image/logo-kf 1.png"
-                    class="img-fluid"
-                    alt="gambar logo"
-                  />
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">How To Buy</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pet Care</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
-              <li
-                class="nav-item d-flex ms-2 gap-1 align-items-center dropdown"
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">Brand Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./testimoni.html">Testimony</a>
+            </li>
+            <li class="nav-item">
+              <!-- Display only on small screens -->
+              <a class="navbar-brand d-none d-lg-block" href="#">
+                <img
+                  src="../assets/image/logo-kf 1.png"
+                  class="img-fluid"
+                  alt="gambar logo"
+                />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">How To Buy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pet Care</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item d-flex align-items-center ms-2 dropdown">
+              <i
+                class="fa-solid fa-magnifying-glass d-none d-lg-block"
+                style="color: #000000"
+              ></i>
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="languageDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-                <i
-                  class="fa-solid fa-magnifying-glass d-none d-lg-block"
-                  style="color: #000000"
-                ></i>
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="languageDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  EN
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">ID</a></li>
-                  <li><a class="dropdown-item" href="#">EU</a></li>
-                  <li><a class="dropdown-item" href="#">CN</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+                EN
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">ID</a></li>
+                <li><a class="dropdown-item" href="#">EU</a></li>
+                <li><a class="dropdown-item" href="#">CN</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-      <section class="d-flex flex-column align-items-center m-0 text-header">
+      <section class="d-flex flex-column align-items-center m-5 text-header">
         <h1 class="text-uppercase fs-1" style="font-weight: 900">Testimony</h1>
         <p class="text-center opacity-50">
           We love to share their story, how about you?

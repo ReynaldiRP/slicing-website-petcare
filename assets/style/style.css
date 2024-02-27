@@ -170,11 +170,6 @@ body {
 }
 
 @media (min-width: 375px) {
-  nav.navbar {
-    width: 75% !important;
-    padding-inline: 1rem !important;
-  }
-
   .image-brand-concept {
     width: 65%;
   }
