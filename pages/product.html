@@ -1,59 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="../assets/style/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Navbar</title>
-  <link rel="stylesheet" href="../assets/style/bootstrap.min.css" />
-  <link rel="stylesheet" href="../assets/style/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <style>
+      body {
+        background: url('../assets/image/background-content.png') repeat round;
+        margin: 0;
+      }
+    </style>
+  </head>
 
-  <style>
-    body {
-      background: url('../assets/image/background-content.png') repeat round;
-      margin: 0;
-    }
-    
-  </style>
-</head>
+  <!-- Header -->
+  <body class="c-primary">
+    <header
+      class="container-fluid position-relative bg-red p-0 rounded-navbar d-flex flex-column gap-5"
+    >
+      <!-- Background Header -->
+      <img
+        src="../assets/image/pattern-navbar.png"
+        alt="background gambar"
+        class="position-absolute bottom-25 z-0 w-100 object-fit-cover"
+        style="opacity: 0.6"
+      />
 
-<!-- Header -->
-<body class="c-primary">
-  <header class="bg-red py-5 position-relative rounded-navbar d-flex flex-column align-items-center gap-5">
-     <!-- Background Header -->
-    <img src="../assets/image/pattern-navbar.png" alt="background gambar"
-      class="position-absolute bottom-25 z-0 w-100 object-fit-cover" style="opacity: 0.6" />
-      
-    <!-- Container Navbar -->
-    <div class="container d-flex justify-content-center">
-      <nav class="navbar navbar-expand-lg c-primary rounded-3 p-0">
+      <!-- Container Navbar -->
+      <nav class="navbar navbar-expand-lg c-primary px-2">
         <!-- Logo -->
         <a class="navbar-brand d-lg-none" href="#">
-          <img src="../assets/image/logo-kf 1.png" class="rounded-circle img-fluid" alt="gambar logo" width="80px" />
+          <img
+            src="../assets/image/logo-kf 1.png"
+            class="img-fluid"
+            alt="gambar logo"
+          />
         </a>
 
         <!-- Hamburger Menu Button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <!-- Navigation Items -->
-        <div class="collapse navbar-collapse justify-content-lg-center" id="navbarNav">
-          <ul class="navbar-nav text-black fw-bold d-flex align-items-center">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul
+            class="navbar-nav w-100 d-flex justify-content-evenly align-items-center text-black fw-bolder"
+          >
             <li class="nav-item">
-              <a class="nav-link" href="#">Brand Story</a>
+              <a class="nav-link" href="#">Home</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Testimony</a>
+              <a class="nav-link" href="./about.html">Brand Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./testimoni.html">Testimony</a>
             </li>
             <li class="nav-item">
               <!-- Display only on small screens -->
               <a class="navbar-brand d-none d-lg-block" href="#">
-                <img src="../assets/image/logo-kf 1.png" class="img-fluid" alt="gambar logo" width="90px" />
+                <img
+                  src="../assets/image/logo-kf 1.png"
+                  class="img-fluid"
+                  alt="gambar logo"
+                />
               </a>
             </li>
             <li class="nav-item">
@@ -65,9 +92,19 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Contact Us</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+            <li class="nav-item d-flex align-items-center ms-2 dropdown">
+              <i
+                class="fa-solid fa-magnifying-glass d-none d-lg-block"
+                style="color: #000000"
+              ></i>
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="languageDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 EN
               </a>
               <ul class="dropdown-menu">
@@ -79,217 +116,257 @@
           </ul>
         </div>
       </nav>
-    </div>
 
-    <section class="container d-flex flex-column align-items-center mb-0 text-heading position-relative">
-      <h2 class="text-uppercase fw-bolder text-header">a goodness in every pour</h2>
-      <p class="text-center text-header">Complete Selection Premium Pet Food</p>
-      <img src="../assets/image/product/banner-catalogue 1.png" alt="background gambar" class="img-fluid w-75"
-        style="z-index: 1" />
-    </section>
-  </header>
+      <section
+        class="container d-flex flex-column align-items-center mb-0 text-heading position-relative"
+      >
+        <h2 class="text-uppercase fw-bolder text-header">
+          a goodness in every pour
+        </h2>
+        <p class="text-center text-header">
+          Complete Selection Premium Pet Food
+        </p>
+        <img
+          src="../assets/image/product/banner-catalogue 1.png"
+          alt="background gambar"
+          class="img-fluid w-75"
+          style="z-index: 1"
+        />
+      </section>
+    </header>
 
-  <main class="px-5">
-    <section class="pt-5 position-relative">
-      <div class="row py-4 px-5 mb-5">
-        <div class="col">
-          <div class="form-check form-switch border-switch">
-            <input class="form-check-input py-4" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked />
-          </div>
-        </div>
-        <div class="col border-4">
-          <select class="form-select form-select-lg mb-3 rounded-pill c-primary border-input c-red fw-bolder h-100"
-            aria-label=".form-select-lg example">
-            <option selected class="text-center">Dry Food</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-        <div class="col">
-          <select class="form-select form-select-lg mb-3 rounded-pill c-primary border-input c-red fw-bolder h-100"
-            aria-label=".form-select-lg example">
-            <option selected class="text-center">All Stages</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-      </div>
-      <h2 class="fw-bold d-flex flex-column align-items-center">
-        Nature Gourmet
-      </h2>
-      <div id="carouselExampleControls" class="carousel slide w-100 mt-4 mb-5" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../assets/image/product/KF Nature Gourmet All Breed Adult 10 kg 1.png" class="d-block mx-auto w-50"
-              alt="..." />
-              <p class="text-center">Antartic Krill - Small Breed Puppy</p>
-          </div>
-          <div class="carousel-item">
-            <img src="../assets/image/product/KF Nature Gourmet All Breed Adult 10 kg 2.png" class="d-block mx-auto w-50"
-              alt="..." />
-              <p class="text-center">Antartic Krill - Small Breed Puppy</p>
-          </div>
-          <div class="carousel-item">
-            <img src="../assets/image/product/KF Nature Gourmet SB Puppy 1.5 kg 1.png" class="d-block mx-auto w-50" alt="..." />
-            <p class="text-center">Antartic Krill - Small Breed Puppy</p>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
-  </main>
-
-   <!-- footer -->
-   <footer class="pt-5 bg-red rounded-footer h-100">
-    <div class="container-fluid">
-      <div class="row d-flex justify-content-center text-center g-3">
-        <!-- Social Media Company -->
-        <div class="col-5 col-md-4 col-lg-3 mb-3 text-main">
-          <div
-            class="d-flex flex-column align-items-center align-items-lg-start text-center text-md-start text-lg-start"
-          >
-            <img
-              src="../assets/image/logo-kf 1.png"
-              class="img-fluid"
-              alt="gambar logo"
-            />
-            <p class="text-socialmedia-footer">
-              Stay in touch and keep up to date with the latest news.
-            </p>
-          </div>
-
-          <ul class="nav d-flex gap-4">
-            <li class="nav-item">
-              <i
-                class="fa-brands fa-linkedin fa-xl"
-                style="color: #ffffff"
-              ></i>
-            </li>
-            <li class="nav-item">
-              <i
-                class="fa-brands fa-x-twitter fa-xl"
-                style="color: #ffffff"
-              ></i>
-            </li>
-            <li class="nav-item">
-              <i
-                class="fa-brands fa-facebook fa-xl"
-                style="color: #ffffff"
-              ></i>
-            </li>
-            <li class="nav-item">
-              <i
-                class="fa-brands fa-instagram fa-xl"
-                style="color: #ffffff"
-              ></i>
-            </li>
-            <li class="nav-item">
-              <i class="fa-brands fa-tiktok fa-xl" style="color: #ffffff"></i>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Useful links -->
-        <div class="col-5 col-md-4 col-lg-3 text-start mt-auto ps-5">
-          <h5 class="text-main" style="font-weight: 800">Useful links</h5>
-          <ul class="nav flex-column" style="font-size: 1rem">
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">Testimony </a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">Pet Care</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">FAQ</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">Contact Us</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white"
-                >Terms & Conditions
-              </a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-white">Privacy policy </a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Signup -->
-        <div class="col-12 col-lg-5 mb-3 pt-3 text-main">
-          <form>
-            <h5 class="mb-4 text-start" style="font-weight: 800">
-              Get updates and stay connected
-            </h5>
-            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-              <label for="email" class="visually-hidden"
-                >enter your email address</label
-              >
+    <main class="px-5">
+      <section class="pt-5 position-relative">
+        <div class="row py-4 px-5 mb-5">
+          <div class="col">
+            <div class="form-check form-switch border-switch">
               <input
-                id="email"
-                type="email"
-                class="form-control rounded-pill"
-                placeholder="Email address"
-                style="background: transparent"
-              />
-              <button
-                class="btn btn-primary rounded-pill flex-shrink-0"
-                type="button"
-                style="
-                  background-color: #f9f4d7;
-                  color: #d22828;
-                  border: none;
-                "
-              >
-                Sign Up
-              </button>
-            </div>
-          </form>
-          <div class="row mt-4">
-            <div class="col-3 d-flex">
-              <img
-                src="../assets/image/footer/Vector.png"
-                alt=""
-                class="img-fluid"
+                class="form-check-input py-4"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckChecked"
+                checked
               />
             </div>
-            <div class="col-3">
+          </div>
+          <div class="col border-4">
+            <select
+              class="form-select form-select-lg mb-3 rounded-pill c-primary border-input c-red fw-bolder h-100"
+              aria-label=".form-select-lg example"
+            >
+              <option selected class="text-center">Dry Food</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col">
+            <select
+              class="form-select form-select-lg mb-3 rounded-pill c-primary border-input c-red fw-bolder h-100"
+              aria-label=".form-select-lg example"
+            >
+              <option selected class="text-center">All Stages</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+        <h2 class="fw-bold d-flex flex-column align-items-center">
+          Nature Gourmet
+        </h2>
+        <div
+          id="carouselExampleControls"
+          class="carousel slide w-100 mt-4 mb-5"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
               <img
-                src="../assets/image/footer/aafco.png"
-                alt=""
-                class="img-fluid"
+                src="../assets/image/product/KF Nature Gourmet All Breed Adult 10 kg 1.png"
+                class="d-block mx-auto w-50"
+                alt="..."
               />
+              <p class="text-center">Antartic Krill - Small Breed Puppy</p>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../assets/image/product/KF Nature Gourmet All Breed Adult 10 kg 2.png"
+                class="d-block mx-auto w-50"
+                alt="..."
+              />
+              <p class="text-center">Antartic Krill - Small Breed Puppy</p>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../assets/image/product/KF Nature Gourmet SB Puppy 1.5 kg 1.png"
+                class="d-block mx-auto w-50"
+                alt="..."
+              />
+              <p class="text-center">Antartic Krill - Small Breed Puppy</p>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="pt-5 bg-red rounded-footer h-100">
+      <div class="container-fluid">
+        <div class="row d-flex justify-content-center text-center g-3">
+          <!-- Social Media Company -->
+          <div class="col-5 col-md-4 col-lg-3 mb-3 text-main">
+            <div
+              class="d-flex flex-column align-items-center align-items-lg-start text-center text-md-start text-lg-start"
+            >
+              <img
+                src="../assets/image/logo-kf 1.png"
+                class="img-fluid"
+                alt="gambar logo"
+              />
+              <p class="text-socialmedia-footer">
+                Stay in touch and keep up to date with the latest news.
+              </p>
+            </div>
+
+            <ul class="nav d-flex gap-4">
+              <li class="nav-item">
+                <i
+                  class="fa-brands fa-linkedin fa-xl"
+                  style="color: #ffffff"
+                ></i>
+              </li>
+              <li class="nav-item">
+                <i
+                  class="fa-brands fa-x-twitter fa-xl"
+                  style="color: #ffffff"
+                ></i>
+              </li>
+              <li class="nav-item">
+                <i
+                  class="fa-brands fa-facebook fa-xl"
+                  style="color: #ffffff"
+                ></i>
+              </li>
+              <li class="nav-item">
+                <i
+                  class="fa-brands fa-instagram fa-xl"
+                  style="color: #ffffff"
+                ></i>
+              </li>
+              <li class="nav-item">
+                <i class="fa-brands fa-tiktok fa-xl" style="color: #ffffff"></i>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Useful links -->
+          <div class="col-5 col-md-4 col-lg-3 text-start mt-auto ps-5">
+            <h5 class="text-main" style="font-weight: 800">Useful links</h5>
+            <ul class="nav flex-column" style="font-size: 1rem">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Testimony </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Pet Care</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">FAQ</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Contact Us</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white"
+                  >Terms & Conditions
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-white">Privacy policy </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Signup -->
+          <div class="col-12 col-lg-5 mb-3 pt-3 text-main">
+            <form>
+              <h5 class="mb-4 text-start" style="font-weight: 800">
+                Get updates and stay connected
+              </h5>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="email" class="visually-hidden"
+                  >enter your email address</label
+                >
+                <input
+                  id="email"
+                  type="email"
+                  class="form-control rounded-pill"
+                  placeholder="Email address"
+                  style="background: transparent"
+                />
+                <button
+                  class="btn btn-primary rounded-pill flex-shrink-0"
+                  type="button"
+                  style="
+                    background-color: #f9f4d7;
+                    color: #d22828;
+                    border: none;
+                  "
+                >
+                  Sign Up
+                </button>
+              </div>
+            </form>
+            <div class="row mt-4">
+              <div class="col-3 d-flex">
+                <img
+                  src="../assets/image/footer/Vector.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-3">
+                <img
+                  src="../assets/image/footer/aafco.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Footer license website -->
-    <div
-      class="d-flex flex-sm-row justify-content-center align-items-center py-2 mt-4"
-      style="border-top: 1px solid black"
-    >
-      <p class="text-white">&copy; Kitchen Flavor, 2024.</p>
-    </div>
-  </footer>
+      <!-- Footer license website -->
+      <div
+        class="d-flex flex-sm-row justify-content-center align-items-center py-2 mt-4"
+        style="border-top: 1px solid black"
+      >
+        <p class="text-white">&copy; Kitchen Flavor, 2024.</p>
+      </div>
+    </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
-  <script src="../assets/script/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="../assets/script/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+  </body>
 </html>
