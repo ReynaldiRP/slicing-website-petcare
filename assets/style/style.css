@@ -112,9 +112,10 @@ body {
 }
 
 .image-testimoni {
-  max-width: 625px;
+  width: 312.5px;
   height: 300px;
   border-radius: 12px;
+  object-fit: cover;
 }
 
 .content-section {
