@@ -112,8 +112,9 @@ body {
 }
 
 .image-testimoni {
-  max-width: 180px;
-  height: 180px;
+  max-width: 625px;
+  height: 300px;
+  border-radius: 12px;
 }
 
 .content-section {
@@ -190,6 +191,9 @@ body {
   --bs-pagination-focus-color: #fff;
   --bs-pagination-focus-bg: var(--c-red);
   --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  --bs-pagination-disabled-color: black;
+  --bs-pagination-disabled-bg: var(--c-primary);
+  --bs-pagination-disabled-border-color: #dee2e6;
   display: flex;
   align-items: center;
   list-style: none;
@@ -238,6 +242,14 @@ body {
   background-color: var(--bs-pagination-active-bg);
 }
 
+.disabled > .custom-page-link,
+.custom-page-link.disabled {
+  color: var(--bs-pagination-disabled-color);
+  pointer-events: none;
+  background-color: var(--bs-pagination-disabled-bg);
+  border-color: var(--bs-pagination-disabled-border-color);
+}
+
 .custom-page-item:not(:first-child) .custom-page-link {
   margin-left: -0.5rem;
 }
@@ -254,7 +266,16 @@ body {
 
 li.nav-item a.nav-link,
 .text-socialmedia-footer {
-  font-weight: normal !important;
+  font-weight: 500px !important;
+}
+
+li.nav-item a.nav-link {
+  color: #222222;
+}
+
+.nav-image {
+  width: 160px !important;
+  height: 128px !important;
 }
 
 .background-badges-categories {
